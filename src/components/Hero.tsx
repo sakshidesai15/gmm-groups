@@ -10,7 +10,7 @@ export default function Hero({ onExploreClick, onContactClick }: HeroProps) {
   const [showTourVideo, setShowTourVideo] = useState(false);
 
   return (
-    <header id="home" className="relative min-h-[95vh] flex items-center justify-center overflow-hidden pt-24 bg-gray-950">
+    <header id="home" className="relative min-h-[88vh] flex items-center justify-center overflow-hidden pt-24 bg-gray-950">
       
       {/* High-resolution Cinematic Luxury Real Estate Visuals */}
       <div className="absolute inset-0 z-0">
@@ -86,22 +86,22 @@ export default function Hero({ onExploreClick, onContactClick }: HeroProps) {
         </div>
 
         {/* Trust Indicators */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto pt-8 border-t border-white/5 bg-gray-950/40 backdrop-blur-md rounded-2xl p-6 border border-white/5">
-          <div className="text-center">
-            <p className="text-2xl sm:text-3xl font-display font-medium text-white">₹1,200 Cr+</p>
-            <p className="text-[10px] text-teal-400 uppercase tracking-wider font-outfit mt-1">Transaction Value</p>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 max-w-5xl mx-auto pt-8">
+          <div className="text-center rounded-2xl bg-slate-950/55 border border-white/5 px-4 py-4">
+            <p className="text-xl sm:text-3xl font-display font-medium text-white">₹1,200 Cr+</p>
+            <p className="text-[10px] text-teal-400 uppercase tracking-wider font-outfit mt-1.5">Transaction Value</p>
           </div>
-          <div className="text-center border-l border-white/5">
-            <p className="text-2xl sm:text-3xl font-display font-medium text-white">100%</p>
-            <p className="text-[10px] text-teal-400 uppercase tracking-wider font-outfit mt-1">RERA Registered</p>
+          <div className="text-center rounded-2xl bg-slate-950/55 border border-white/5 px-4 py-4">
+            <p className="text-xl sm:text-3xl font-display font-medium text-white">100%</p>
+            <p className="text-[10px] text-teal-400 uppercase tracking-wider font-outfit mt-1.5">RERA Registered</p>
           </div>
-          <div className="text-center border-l border-white/5">
-            <p className="text-2xl sm:text-3xl font-display font-medium text-white">150+</p>
-            <p className="text-[10px] text-teal-400 uppercase tracking-wider font-outfit mt-1">Founders Advisory</p>
+          <div className="text-center rounded-2xl bg-slate-950/55 border border-white/5 px-4 py-4">
+            <p className="text-xl sm:text-3xl font-display font-medium text-white">150+</p>
+            <p className="text-[10px] text-teal-400 uppercase tracking-wider font-outfit mt-1.5">Founders Advisory</p>
           </div>
-          <div className="text-center border-l border-white/5">
-            <p className="text-2xl sm:text-3xl font-display font-medium text-white">&lt;48 HR</p>
-            <p className="text-[10px] text-teal-400 uppercase tracking-wider font-outfit mt-1">Title Verification</p>
+          <div className="text-center rounded-2xl bg-slate-950/55 border border-white/5 px-4 py-4">
+            <p className="text-xl sm:text-3xl font-display font-medium text-white">&lt;48 HR</p>
+            <p className="text-[10px] text-teal-400 uppercase tracking-wider font-outfit mt-1.5">Title Verification</p>
           </div>
         </div>
       </div>
@@ -114,7 +114,7 @@ export default function Hero({ onExploreClick, onContactClick }: HeroProps) {
               onClick={() => setShowTourVideo(false)}
               className="absolute top-4 right-4 bg-black/60 hover:bg-black text-white w-10 h-10 rounded-full flex items-center justify-center z-10 font-bold transition-all"
             >
-              ✕
+              ×
             </button>
             <iframe
               className="w-full h-full"

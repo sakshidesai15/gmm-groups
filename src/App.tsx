@@ -509,7 +509,7 @@ export default function App() {
                 onClick={() => setShowCompareDrawer(false)}
                 className="px-3 py-1 bg-slate-800 text-gray-400 hover:text-white rounded-lg text-xs font-semibold cursor-pointer"
               >
-                ✕ Hide comparison
+                × Hide comparison
               </button>
             </div>
 
@@ -525,7 +525,7 @@ export default function App() {
                         onClick={() => handleToggleCompare(cId)}
                         className="absolute top-3 right-3 bg-slate-800 text-gray-400 hover:text-white w-6 h-6 rounded-md flex items-center justify-center text-xs border border-white/5"
                       >
-                        ✕
+                        ×
                       </button>
 
                       <div className="space-y-3 pt-2">

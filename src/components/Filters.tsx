@@ -102,16 +102,16 @@ export default function Filters({
   };
 
   return (
-    <div className="relative z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-20">
+    <div className="relative z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
       
       {/* Outer Floating Glass Frame */}
-      <div className="glass-panel rounded-3xl p-6 sm:p-8 shadow-2xl relative border border-white/10 overflow-hidden">
+      <div className="bg-slate-950/90 backdrop-blur-xl rounded-3xl p-5 sm:p-8 shadow-[0_30px_80px_rgba(0,0,0,0.35)] relative border border-white/10 overflow-hidden">
         
         {/* Glow Line Top */}
         <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-teal-400 to-sky-400" />
 
         {/* Tab Header Selector */}
-        <div className="flex flex-wrap items-center gap-1.5 border-b border-white/5 pb-5 mb-6">
+        <div className="flex flex-wrap items-center gap-2 overflow-x-auto border-b border-white/5 pb-4 mb-6">
           {["Buy", "Rent", "Just Sold", "Pre-approval", "Home Value", "Sell"].map((tab) => (
             <button
               key={tab}
@@ -119,7 +119,7 @@ export default function Filters({
                 setActiveTab(tab);
                 setAppraisedValue(null);
               }}
-              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide transition-all cursor-pointer ${
+              className={`whitespace-nowrap px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold tracking-wide transition-all cursor-pointer ${
                 activeTab === tab
                   ? "bg-gradient-teal-blue text-white shadow-md shadow-teal-500/10 border border-teal-400/20"
                   : "text-gray-400 hover:text-white hover:bg-white/5 border border-transparent"

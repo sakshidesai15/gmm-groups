@@ -59,7 +59,7 @@ export default function ServicesAndFeatures() {
         </div>
 
         {/* Row 3: High-contrast features grid Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-slate-900 border border-white/5 rounded-3xl p-6 sm:p-10 relative overflow-hidden shadow-2xl">
+        <div id="about" className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-slate-900 border border-white/5 rounded-3xl p-6 sm:p-10 relative overflow-hidden shadow-2xl">
           
           <div className="absolute top-0 right-0 w-64 h-64 bg-teal-500/10 blur-3xl pointer-events-none" />
 
