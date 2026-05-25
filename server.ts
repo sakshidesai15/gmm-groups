@@ -147,7 +147,7 @@ app.post("/api/chat", async (req, res) => {
         matchedProps = properties.filter(p => p.type === "Commercial");
       }
 
-      let answer = `Greetings! I am GMM's Sovereign Property Concierge. Based on your prompt, here are our executive insights.
+      let answer = `Greetings! I am GMM's Property Advisor. Based on your prompt, here are our executive insights.
       
 We represent the most exceptional properties across India. ${matchedProps.length > 0 ? `I highly recommend looking at **${matchedProps[0].title}** located in *${matchedProps[0].location}* with an asking of *${matchedProps[0].price}*.` : "Our portfolio includes pristine villas in Jubilee Hills & Indiranagar, premium beachfront developmental lands in Vizag, and obsidian technical commercial hubs in Gachibowli."}
 
@@ -168,7 +168,7 @@ We represent the most exceptional properties across India. ${matchedProps.length
     // Format property catalog to insert as contextual grounding inside the system prompt
     const inventoryContext = properties.map((p, i) => `${i+1}. [${p.id}] ${p.title} - ${p.price}, located at ${p.location} (${p.city}, ${p.state}). Type: ${p.type}. Specs: ${p.beds} BHK baths: ${p.baths}. Area: ${p.sqft} sqft. Features: ${p.highlights.join(", ")}. Amenities: ${p.amenities.join(", ")}. RERA: ${p.rera ? "Yes" : "No"}. Category: ${p.category}. Description: ${p.description}`).join("\n\n");
 
-    const systemInstruction = `You are "GMM Sovereign Property Concierge", an elite, senior real estate investment advisor representing GMM Groups & Services (India). 
+    const systemInstruction = `You are "GMM Property Advisor", an elite, senior real estate investment advisor representing GMM Groups & Services (India). 
 You cater to ultra-high-net-worth investors, family offices, tech founders, and premium home-buyers.
 Your tone is highly professional, sophisticated, and analytical. You speak with extreme market competence.
 You strictly answer queries based on our active GMM portfolio listed below.
@@ -187,7 +187,7 @@ Rules:
       model: "gemini-3.5-flash",
       contents: [
         { role: "user", parts: [{ text: `Hello, what properties do you have?` }] },
-        { role: "model", parts: [{ text: `Welcome to GMM Groups & Services. I am your Sovereign Property Concierge. We manage an ultra-premium portfolio of RERA-cleared luxury villas, architectural penthouses, beachfront plots, and commercial headquarters in Bangalore, Hyderabad, and Andhra Pradesh. How may I assist your structural investment goals today?` }] },
+        { role: "model", parts: [{ text: `Welcome to GMM Groups & Services. I am your Property Advisor. We manage an ultra-premium portfolio of RERA-cleared luxury villas, architectural penthouses, beachfront plots, and commercial headquarters in Bangalore, Hyderabad, and Andhra Pradesh. How may I assist your structural investment goals today?` }] },
         ...messages.map((m: any) => ({
           role: m.role,
           parts: [{ text: m.text }]

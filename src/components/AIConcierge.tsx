@@ -11,7 +11,7 @@ export default function AIConcierge({ onQuickViewProperty }: AIConciergeProps) {
     {
       id: "init-message",
       role: "model",
-      text: "Greetings. I am GMM's Sovereign Property Concierge. I have scrutinized all RERA certificates, pricing variables, and location assets in our database. Tell me, what capital objectives or premium architectural aesthetic are you searching for today? (e.g. 4BHK Jubilee Hills luxury villa, beachfront plot in Vizag, or Whitefield penthouses)",
+      text: "Greetings. I am GMM's Property Advisor. I have scrutinized all RERA certificates, pricing variables, and location assets in our database. Tell me, what capital objectives or premium architectural aesthetic are you searching for today? (e.g. 4BHK Jubilee Hills luxury villa, beachfront plot in Vizag, or Whitefield penthouses)",
       timestamp: new Date().toLocaleTimeString()
     }
   ]);
@@ -92,7 +92,7 @@ export default function AIConcierge({ onQuickViewProperty }: AIConciergeProps) {
             Next-Gen AI Core Grounding
           </span>
           <h2 className="text-3xl sm:text-4xl text-white font-display font-bold leading-normal">
-            Consult the GMM <span className="text-gradient">Sovereign Property Concierge</span>
+            Consult the GMM <span className="text-gradient">Property Advisor</span>
           </h2>
           <p className="text-xs sm:text-sm text-gray-400 font-light leading-relaxed max-w-xl mx-auto mt-2">
             Ask our intelligent system regarding RERA approval details, dynamic pricing comparisons, and matching villa architectures. Chat in real-time.
@@ -111,7 +111,7 @@ export default function AIConcierge({ onQuickViewProperty }: AIConciergeProps) {
                 <h3 className="font-display font-semibold text-sm">Advisor Guidelines</h3>
               </div>
               <p className="text-xs text-gray-400 leading-relaxed font-light">
-                Our elite concierge chatbot searches, matches, and appraises our active portfolio from Whitefield, Jubilee Hills, and coastal Vizag. Try clicking one of our pre-analyzed suggestions below:
+                Our elite advisor chatbot searches, matches, and appraises our active portfolio from Whitefield, Jubilee Hills, and coastal Vizag. Try clicking one of our pre-analyzed suggestions below:
               </p>
 
               {/* Instant Suggestions */}
@@ -149,7 +149,7 @@ export default function AIConcierge({ onQuickViewProperty }: AIConciergeProps) {
               <div className="flex items-center space-x-2.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
                 <div>
-                  <h4 className="text-xs text-white font-semibold">GMM Concierge Core Node</h4>
+                  <h4 className="text-xs text-white font-semibold">GMM Advisor Core Node</h4>
                   <p className="text-[9px] text-gray-400 tracking-wide">CONFIDENTIAL COGNITIVE CHAT</p>
                 </div>
               </div>
@@ -236,7 +236,7 @@ export default function AIConcierge({ onQuickViewProperty }: AIConciergeProps) {
                 type="text"
                 value={inputVal}
                 onChange={(e) => setInputVal(e.target.value)}
-                placeholder="Ask GMM Concierge... (e.g. recommend villas in Jubilee Hills)"
+                placeholder="Ask GMM Advisor... (e.g. recommend villas in Jubilee Hills)"
                 className="flex-grow bg-slate-900 border border-white/10 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-teal-400"
               />
               <button

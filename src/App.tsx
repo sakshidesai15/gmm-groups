@@ -598,7 +598,7 @@ export default function App() {
         title="Direct WhatsApp Helpline"
       >
         <MessageSquare className="w-5 h-5 text-slate-950" />
-        <span className="hidden md:inline text-slate-950">GMM WhatsApp Concierge</span>
+        <span className="hidden md:inline text-slate-950">GMM Services WhatsApp</span>
       </a>
 
     </div>
